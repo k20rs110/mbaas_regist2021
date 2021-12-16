@@ -12,7 +12,7 @@
     // NCMB アクセスの準備
     var ncmb = new NCMB(appKey, clientKey);
     // 利用するデータベースを指定（存在しなければ生成）
-    var TestClass = ncmb.DataStore("RegisterTest2021");
+    var TestClass = ncmb.DataStore("ClassBox");
     // コールバックの登録など
     $(function(){
       $("#message").html("initialized");
@@ -57,16 +57,16 @@
 <body>
   <h1>Registration Sample</h1>
   <div>
-    <label for="field">Field:</label>
-    <input id="field" type="text" value="message">
+    <label for="Name">Name:</label>
+    <input id="Name" type="text" value="student name">
   </div>
   <div>
-    <label for="value">Value:</label>
-    <input id="value" type="text" value="Hello, mBaaS!">
+    <label for="Point">Point:</label>
+    <input id="Point" type="text" value="test point">
   </div>
   <div id="button">
-    <button id="btnA" class="btn">Regist 1</button>
-    <button id="btnB" class="btn">Regist 2</button>
+    <button id="btnA" class="btn">Register</button>
+    <button id="btnB" class="btn">Point</button>
   </div>
   <div id="message"></div>
 </body>
